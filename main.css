@@ -1,0 +1,64 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1b1b2f !important;
+  min-height: 3000px;
+}
+
+#arboleda {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#arboleda img {
+  position: absolute;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+#arboleda .arboles {
+  width: 150%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: -20%;
+}
+#arboleda .luna {
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+}
+#arboleda #slogan {
+  font-size: 5em;
+  color: #fff;
+  z-index: 1;
+  width: 100%;
+  text-align: start;
+  padding-left: 10%;
+}
+#arboleda #capa4 {
+  left: -10%;
+}
+#arboleda #capa2 {
+  right: -10%;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(27, 27, 47, 0.8) !important;
+}
+header #logo {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(246deg) brightness(107%) contrast(103%);
+}/*# sourceMappingURL=main.css.map */

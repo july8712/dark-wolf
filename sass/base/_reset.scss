@@ -1,0 +1,11 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1b1b2f!important;
+    min-height:3000px;
+    // max-height: 3000px;
+}

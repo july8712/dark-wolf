@@ -1,0 +1,43 @@
+#arboleda{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    img{
+        position: absolute;
+        pointer-events: none;
+        transition: all 0.5s ease;
+        // top: -20%;
+    }
+    .arboles{
+        width: 150%;
+        height: 100%;
+        object-fit: cover;
+        top: -20%;
+        // left: 0;
+    }
+    .luna{
+        top: 0%;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        
+    }
+    #slogan{
+        font-size: 5em;
+        color: #fff;
+        z-index: 1;
+        width: 100%;
+        text-align:start;
+        padding-left: 10%;
+    }
+    #capa4{
+        left: -10%;
+    }
+    #capa2{
+        right: -10%;
+    }
+}
