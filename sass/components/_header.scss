@@ -1,11 +1,193 @@
-header{
-    position: sticky;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 10;
+// header{
+//     position: sticky;
+//     top: 0;
+//     right: 0;
+//     left: 0;
+//     z-index: 10;
+//     background-color: rgba(27, 27, 47, 0.8) !important;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     #logo{
+//         filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(246deg) brightness(107%) contrast(103%);
+//     }
+
+//     nav{
+//         ul{
+//             display: flex;
+//             gap: 20px;
+//         }
+//         a{
+//             color: #fff;
+//             text-decoration: none;
+//             font-size: 2rem;
+//         }
+//         li{
+//             list-style: none;
+//         }
+//     }
+// }
+
+header {
     background-color: rgba(27, 27, 47, 0.8) !important;
-    #logo{
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 80px;
+    #logo {
         filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(246deg) brightness(107%) contrast(103%);
+    }
+}
+
+
+.contenedor-logo {
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.menu-lateral {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(27, 27, 47, 1) !important;
+    transition: all .5s ease-in-out;
+    padding-top: 43%;
+    z-index: 2;
+    ul {
+        padding: 20px;
+        li {
+            list-style-type: none;
+            a {
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: #fff!important;
+            }
+        }
+    }
+}
+
+
+
+.menu-lateral {
+    ul{
+        li{
+            border-bottom: 1px solid var(--color-background);
+            a {
+                color: var(--color-background);
+            }
+        }
+    }
+}
+
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    transition: all .5s ease-in-out;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(0.7);
+}
+
+.menu {
+    position: relative;
+    z-index: 10;
+    left: -4%;
+    transition: all .5s ease-in-out;
+}
+
+.menu.corrido {
+    width: auto;
+    height: auto;
+    transition: all .5s ease-in-out;
+    left: -4%;
+}
+
+.menu-btn__burger {
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+    transform: translateY(-10px);
+}
+
+.menu-btn__burger::after {
+    transform: translateY(10px);
+}
+
+/* ANIMATION */
+
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+    z-index: 100;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.cerrado {
+    left: -100%;
+    transition: all .5s ease-in-out;
+}
+
+@media(min-width: 576px) {
+    header {
+        background: var(--color-navbar);
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+    }
+
+    .nav-desktop {
+        background: transparent;
+        position: relative;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    nav ul li:hover a {
+        font-weight: 600;
+        // color: var(--color-background);
     }
 }

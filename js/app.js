@@ -8,6 +8,27 @@ const slogan = document.getElementById('slogan');
 var prev_value_capa2 = parseFloat(window.getComputedStyle(capa2).right) || 0;
 var prev_value_capa4 = parseFloat(window.getComputedStyle(capa4).left) || 0;
 
+const menuBtn = document.querySelector(".menu-btn");
+const menuLateral = document.querySelector(".menu-lateral");
+const menu = document.querySelector(".menu");
+let menuOpen = false;
+
+
+
+menuBtn.addEventListener('click', () => {
+    if(!menuOpen){
+        menuBtn.classList.add('open');
+        menu.classList.add('corrido');
+        menuLateral.classList.remove('cerrado');
+        menuOpen = true;
+    }else{
+        menuBtn.classList.remove('open');
+        menu.classList.remove('corrido');
+        menuLateral.classList.add('cerrado');
+        menuOpen = false;
+    }
+})
+
 window.addEventListener("scroll", () => {
     let value = window.scrollY;
     luna.style.right = value * .8 + "px";

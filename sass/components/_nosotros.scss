@@ -1,0 +1,53 @@
+#nosotros{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 3rem;
+    padding-bottom: 100px;
+    h2, p{
+        color: #fff;
+    }
+    h2{
+        margin-bottom:1.3rem;
+    }
+    img{
+        filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(246deg) brightness(107%) contrast(103%);
+    }
+    li{
+        color: #fff;
+        list-style-type: none;
+        padding-top: 1.5rem;
+        span{
+            font-weight:800;
+            display: block;
+            margin-bottom: .5rem;
+        }
+    }
+}
+
+#eleginos{
+    background-color: #fff;
+    padding: 70px 0;
+    h2,
+        p {
+            color: #000;
+            
+        }
+    
+        h2 {
+            margin-bottom: 1.3rem;
+            
+            color: #1b1b2f;
+        }
+
+        span{
+            display: block;
+            font-size:1.5rem;
+            font-weight:600;
+            color: #e33e5a;
+            margin-top: 1.7rem;
+        }
+
+        p{
+            margin-bottom: 0.5rem;
+        }
+}
