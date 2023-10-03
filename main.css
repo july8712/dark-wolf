@@ -79,6 +79,12 @@ header {
   padding: 15px;
   height: 80px;
 }
+header li {
+  list-style-type: none;
+}
+header li a {
+  text-decoration: none;
+}
 header #logo {
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(246deg) brightness(107%) contrast(103%);
 }
@@ -226,7 +232,7 @@ header #logo {
   color: #fff;
 }
 #nosotros h2 {
-  margin-bottom: 1.3rem;
+  margin-bottom: 2rem;
 }
 #nosotros img {
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(246deg) brightness(107%) contrast(103%);
