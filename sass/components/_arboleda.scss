@@ -24,15 +24,23 @@
         right: 0%;
         width: 100%;
         height: 100%;
-        
     }
     #slogan{
-        font-size: 5em;
+        font-size: 4rem;
         color: #fff;
         z-index: 1;
         width: 100%;
         text-align:start;
-        padding-left: 10%;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400 !important;
+        text-align: center;
+        text-shadow: 4px 1px 4px rgb(27, 27, 47);
+        position: absolute;
+        bottom: 10%;
+        background-color: #1f4068;
+        span{
+            font-weight: 500;
+        }
     }
     #capa4{
         left: -10%;
