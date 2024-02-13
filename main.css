@@ -76,6 +76,11 @@ body .separador div {
 #arboleda #capa2 {
   right: -10%;
 }
+#arboleda #capa1 {
+  -o-object-position: 0 62%;
+     object-position: 0 62%;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -350,4 +355,134 @@ header #logo {
 }
 #servicios .servicio p span {
   font-weight: 700;
+}
+
+#secCards h2, #secCards h3 {
+  color: var(--BLANCO, #FFF);
+}
+#secCards h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+#secCards h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 6rem;
+}
+#secCards .contCards {
+  display: grid;
+  grid-template-columns: repeat(3, 260px);
+  gap: 3.6rem;
+}
+#secCards .card {
+  border-radius: 5px 5px 10px 10px;
+  background: rgba(25, 31, 70, 0.72);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#secCards .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 5px;
+  width: 100%;
+  background: var(--DEGRADE, linear-gradient(90deg, #32669B 0%, #85FFBD 100%));
+  border-radius: 5px 5px 0px 0px;
+}
+#secCards .card:hover {
+  box-shadow: 0px 0px 19px 0px rgba(255, 255, 255, 0.75);
+}
+#secCards .card h4 {
+  color: var(--BLANCO, #FFF);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+#secCards .card .precio {
+  color: var(--VERDE, #85FFBD);
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 0.8rem;
+}
+#secCards .card ul {
+  margin-left: -12px;
+}
+#secCards .card ul li {
+  list-style-image: url(../../assets/iconos/item.svg);
+  color: var(--BLANCO, #FFF);
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.2rem;
+}
+#secCards .card ul .tachado {
+  text-decoration: line-through;
+}
+#secCards .card a {
+  width: 106px;
+  border-radius: 8px;
+  background: linear-gradient(95deg, #32669B 0%, #85FFBD 153.99%);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  padding: 8px;
+  color: var(--BLANCO, #FFF);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.8rem 0 1rem 0;
+}
+#secCards .card span {
+  color: var(--BLANCO, #FFF);
+  text-align: center;
+  font-size: 0.7rem;
+  font-style: italic;
+  font-weight: 500;
+  width: 80%;
+}
+#secCards .card .consultar {
+  font-size: 2rem;
+}
+
+#contacto h2 {
+  color: var(--BLANCO, #FFF);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+#contacto p {
+  color: var(--BLANCO, #FFF);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#contacto .redes {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  padding-left: 0;
+  margin-top: 3.6rem;
+}
+#contacto .redes li {
+  list-style: none;
+}
+#contacto .redes img {
+  height: 25px;
+}
+
+.footer {
+  background: var(--AZUL, #1C2645);
+  margin-bottom: 0;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10rem;
+}
+.footer p {
+  margin-bottom: 0;
+  color: var(--BLANCO, #FFF);
+  font-size: 0.8rem;
 }/*# sourceMappingURL=main.css.map */
