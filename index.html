@@ -11,12 +11,12 @@
 <body>
 
     <header class="d-flex align-items-center py-3 px-4">
+        <a href="#" class="contenedor-logo"><img src="./assets/img/logo.svg" alt="Logo Dark Wolf" id="logo" width="150"></a>
         <div class="menu d-bock d-sm-none">
             <div class="menu-btn">
                 <div class="menu-btn__burger"></div>
             </div>
         </div>
-        <a href="#" class="contenedor-logo"><img src="./assets/img/logo.svg" alt="Logo Dark Wolf" id="logo" width="200"></a>
         <nav class="d-none d-sm-flex justify-content-end p-3 p-sm-0 nav-desktop">
             <ul class="d-none d-sm-flex justify-content-between align-items-center gap-3 w-sm-100 w-lg-50 mb-0">
                 <li><a href="#">Sobre mi</a></li>
@@ -41,59 +41,101 @@
         <img src="./assets/img/arboles-03.svg" alt="" id="capa3" class="arboles">
         <img src="./assets/img/arboles-02.svg" alt="" id="capa2" class="arboles">
         <img src="./assets/img/arboles-01.svg" alt="" id="capa1" class="arboles">
-        <h1 id="slogan">Tú sitio, <span>tú huella...</span></h1>
+        <h1 id="slogan">Aumentá el potencial <span class="d-block">de tu empresa</span></h1>
     </section>
 
     <main>
         <section id="nosotros">
-            <div class="container grilla">
-                <div>
-                    <h2>Sobre Dark Wolf</h2>
-                    <p>En Dark Wolf, somos una familia apasionada por el diseño web con un objetivo claro: ayudarte a triunfar en línea. No somos solo una agencia, somos tus socios en este emocionante viaje.</p>
-                    <p>Nuestra esencia se basa en tres valores fundamentales:</p>
-                    <div class="ps-0 containerCardsValor">
+            <div class="container">
+                    <p class="text-center intro">En Dark Wolf, somos una familia apasionada por el diseño web con un objetivo claro: ayudarte a triunfar en línea. No somos solo una agencia, somos tus socios en este emocionante viaje.</p>
+                    <h2 class="valores text-center">Nuestra esencia se basa en tres valores fundamentales:</h2>
+                    <div class="ps-0 containerCardsValor pb-5">
                         <div class="cardValor">
-                            <div class="imagen">
-                                <i class="fa-solid fa-palette"></i>
-                            </div>
-                            <div class="d-flex flex-column justify-content-start h-100">
-                                <h3><span>Creatividad</span><br> sin Límites</h3>
-                                <p>Cada proyecto es una oportunidad para liberar nuestra imaginación y ofrecer soluciones únicas.</p>
+                            <div class="px-4 py-4">
+                                <div class="imagen">
+                                    <img src="./assets/iconos/creatividad.svg" alt="Creatividad">
+                                </div>
+                                <div class="d-flex flex-column justify-content-start h-100">
+                                    <h3>Creatividad sin Límites</h3>
+                                    <p>Cada proyecto es una oportunidad para liberar nuestra imaginación y ofrecer soluciones únicas.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="cardValor">
-                            <div class="imagen">
-                                <i class="fa-solid fa-hand-holding-heart"></i>
-
-                            </div>
-                            <div class="d-flex flex-column justify-content-start h-100">
-                                <h3><span>Responsabilidad</span> absoluta</h3>
-                                <p>No descansamos hasta que tu sitio web sea perfecto. La excelencia es nuestra norma.</p>
+                            <div class="px-4 py-4">
+                                <div class="imagen">
+                                    <img src="./assets/iconos/responsabilidad.svg" alt="Responsabilidad">
+                                </div>
+                                <div class="d-flex flex-column justify-content-start h-100">
+                                    <h3>Responsabilidad absoluta</h3>
+                                    <p>No descansamos hasta que tu sitio web sea perfecto. La excelencia es nuestra norma.</p>
+                                </div>
                             </div>
                             
                         </div>
                         <div class="cardValor">
-                            <div class="imagen">
-                                <i class="fa-solid fa-handshake-angle"></i>
-
-                            </div>
-                            <div class="d-flex flex-column justify-content-start h-100">
-                                <h3><span>Compromiso</span> Empresarial</h3>
-                                <p>Somos emprendedores de corazón y entendemos tus desafíos y sueños. Tu éxito es nuestro éxito.</p>
+                            <div class="px-4 py-4">
+                                <div class="imagen">
+                                    <img src="./assets/iconos/compromiso.svg" alt="Compromiso">
+                                </div>
+                                <div class="d-flex flex-column justify-content-start h-100">
+                                    <h3>Compromiso Empresarial</h3>
+                                    <p>Somos emprendedores de corazón y entendemos tus desafíos y sueños. Tu éxito es nuestro éxito.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <img src="./assets/img/lobo.svg" alt="">
             </div>
         </section>
-        <section id="eleginos">
+        <div class="separador">
+            <div></div>
+        </div>
+        <section id="servicios">
             <div class="container">
-                <h2 class="text-center">¿Por qué elegirnos?</h2>
-                <p class="text-center"> Porque somos especialistas en <strong>diseño web</strong> a medida, buscamos resultados y ofrecemos soporte constante.</p>
-                <p class="text-center">En <strong>Dark Wolf</strong>, tu éxito en línea es nuestra misión. <span>¡Hablemos de tu próximo proyecto!</span></p>
+                <h2 class="text-center">Cada servicio que brindamos cuenta con: </h2>
+                <div class="contServicios">
+                    <div class="servicio">
+                        <div class="contImg">
+                            <img src="./assets/iconos/servicios/Hosting.svg" alt="Hosting y Dominio" height="20">
+                        </div>
+                        <p><span>Hosting y Dominio.</span> Accedé a descuentos especiales adquiriendo el hosting y el dominio para tu sítio web con nosotros.</p>
+                    </div>
+                    <div class="servicio">
+                        <div class="contImg">
+                            <img src="./assets/iconos/servicios/rrss.svg" alt="Redes Sociales" height="22">
+                        </div>
+                        <p><span>Integración con redes sociales. </span> Otorgá a tus clientes la posibilidad de contactarte por la red social que prefieran.</p>
+                    </div>
+                    <div class="servicio">
+                        <div class="contImg">
+                            <img src="./assets/iconos/servicios/responsive.svg" alt="100% responsive" height="22">
+                        </div>
+                        <p><span>Sitio web 100% responsive.</span> Podés acceder perfectamente desde cualquier dispositivo, ya sea celular, table o pc.</p>
+                    </div>
+                    <div class="servicio">
+                        <div class="contImg">
+                            <img src="./assets/iconos/servicios/whatsapp.svg" alt="Botón directo a Whatsapp" height="22">
+                        </div>
+                        <p><span>Botón directo a WhatsApp.</span> Dale facilidad a tu cliente para una comunicación directa con vos.</p>
+                    </div>
+                    <div class="servicio">
+                        <div class="contImg">
+                            <img src="./assets/iconos/servicios/autoadministrable.svg" alt="Panel Autoadministrable" height="20">
+                        </div>
+                        <p><span>Panel Autoadministrable a medida.</span> Modificá el contenido de tu sitio fácilmente desde el papel que preparamos especialmente para vos.</p>
+                    </div>
+                    <div class="servicio">
+                        <div class="contImg">
+                            <img src="./assets/iconos/servicios/tutoriales.svg" alt="Tutoriales" height="20">
+                        </div>
+                        <p><span>Tutoriales.</span> Aprovechá al máximo tu sitio web con nuestros tutoriales.</p>
+                    </div>
+                </div>
             </div>
         </section>
+        <div class="separador">
+            <div></div>
+        </div>
     </main>
 
     <script src="https://kit.fontawesome.com/1ba02c2d75.js" crossorigin="anonymous"></script>
