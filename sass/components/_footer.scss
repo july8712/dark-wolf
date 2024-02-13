@@ -1,0 +1,16 @@
+.footer {
+    background: var(--AZUL, #1C2645);
+    margin-bottom: 0;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10rem;
+    p{
+        margin-bottom:0;
+        // margin-top: 10rem;
+        color: var(--BLANCO, #FFF);
+        font-size: .8rem;
+    }
+}
