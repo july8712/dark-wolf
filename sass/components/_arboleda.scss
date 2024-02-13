@@ -6,11 +6,13 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    margin-top: 3rem;
     img{
         position: absolute;
         pointer-events: none;
         transition: all 0.5s ease;
         // top: -20%;
+        margin-top: 2rem;
     }
     .arboles{
         width: 150%;
@@ -26,26 +28,24 @@
         height: 100%;
     }
     #slogan{
-        font-size: 4rem;
+        font-size: 3.5rem;
         color: #fff;
         z-index: 1;
         width: 100%;
         text-align:start;
-        font-family: 'Lexend Deca', sans-serif;
-        font-weight: 400 !important;
+        font-weight: 700 !important;
         text-align: center;
         text-shadow: 4px 1px 4px rgb(27, 27, 47);
         position: absolute;
-        // bottom: 10%;
-        // background-color: #1f4068;
-        span{
-            font-weight: 500;
-        }
+        top: 0;
     }
     #capa4{
         left: -10%;
     }
     #capa2{
         right: -10%;
+    }
+    #capa1{
+        // width: 100%;
     }
 }

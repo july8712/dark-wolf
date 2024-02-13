@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --AZUL-FONDO: #000212;
+  --AZUL: #1C2645;
+  --BLANCO: #FFF;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -6,12 +12,21 @@
 }
 
 body {
-  background-color: #1b1b2f !important;
+  background-color: var(--AZUL-FONDO);
   min-height: 3000px;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-body h2 {
-  font-family: "Lexend Deca", sans-serif;
+body .separador {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .separador div {
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(90deg, #32669B 0%, #85FFBD 100%);
 }
 
 #arboleda {
@@ -22,11 +37,13 @@ body h2 {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  margin-top: 3rem;
 }
 #arboleda img {
   position: absolute;
   pointer-events: none;
   transition: all 0.5s ease;
+  margin-top: 2rem;
 }
 #arboleda .arboles {
   width: 150%;
@@ -42,19 +59,16 @@ body h2 {
   height: 100%;
 }
 #arboleda #slogan {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #fff;
   z-index: 1;
   width: 100%;
   text-align: start;
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: 400 !important;
+  font-weight: 700 !important;
   text-align: center;
   text-shadow: 4px 1px 4px rgb(27, 27, 47);
   position: absolute;
-}
-#arboleda #slogan span {
-  font-weight: 500;
+  top: 0;
 }
 #arboleda #capa4 {
   left: -10%;
@@ -62,12 +76,8 @@ body h2 {
 #arboleda #capa2 {
   right: -10%;
 }
-
 header {
-  background-color: rgba(27, 27, 47, 0.8) !important;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -82,6 +92,7 @@ header li {
 }
 header li a {
   text-decoration: none;
+  font-size: 1rem;
 }
 header #logo {
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(246deg) brightness(107%) contrast(103%);
@@ -112,7 +123,6 @@ header #logo {
   list-style-type: none;
 }
 .menu-lateral ul li a {
-  font-size: 1.5rem;
   text-decoration: none;
   color: #fff !important;
 }
@@ -204,7 +214,7 @@ header #logo {
 
 @media (min-width: 576px) {
   header {
-    background: var(--color-navbar);
+    background-color: rgba(0, 2, 18, 0.8);
     display: flex;
     justify-content: space-between;
     position: sticky;
@@ -220,24 +230,16 @@ header #logo {
     font-weight: 600;
   }
 }
-#nosotros {
-  padding: 100px 0;
-  padding-bottom: 100px;
-  background-color: #1b1b2f;
-}
-#nosotros .grilla {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  gap: 3rem;
-}
 #nosotros h2, #nosotros p {
   color: #fff;
 }
-#nosotros h2 {
-  margin-bottom: 2rem;
+#nosotros .valores {
+  margin-bottom: 3.2rem;
+  font-size: 2rem;
+  font-weight: 500;
 }
-#nosotros img {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7472%) hue-rotate(125deg) brightness(114%) contrast(94%);
+#nosotros .intro {
+  margin-bottom: 10rem;
 }
 #nosotros .containerCardsValor {
   display: grid;
@@ -246,71 +248,106 @@ header #logo {
   margin-top: 4rem;
 }
 #nosotros .cardValor {
-  color: #1b1b2f;
-  background-color: white;
-  padding: 2rem 2rem 1.5rem 2rem;
-  overflow: hidden;
-  width: 250px;
+  border-radius: 5px 5px 10px 10px;
+  background: rgba(25, 31, 70, 0.72);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border-radius: 20px;
+  position: relative;
 }
-#nosotros .cardValor .imagen {
+#nosotros .cardValor::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 5px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: var(--DEGRADE, linear-gradient(90deg, #32669B 0%, #85FFBD 100%));
+  border-radius: 5px 5px 0px 0px;
+}
+#nosotros .cardValor .imagen img {
+  height: 2.4rem;
 }
 #nosotros .cardValor h3 {
-  font-weight: 800;
+  font-weight: 700;
   display: block;
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-bottom: 0;
   width: 100%;
-  padding: 1rem 0;
+  padding: 0.8rem 0 0.8rem 0;
 }
 #nosotros .cardValor h3 span {
   font-size: 1.6rem;
 }
 #nosotros .cardValor h3, #nosotros .cardValor p {
-  text-align: center;
-  color: #000;
+  color: var(--BLANCO, #FFF);
 }
 #nosotros .cardValor p {
-  font-size: 0.9rem;
-}
-#nosotros .cardValor i {
-  font-size: 3rem;
-  background-color: #f71735;
-  background-image: linear-gradient(147deg, #f71735 0%, #db3445 74%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 #nosotros .cardValor:hover {
   box-shadow: 0px 0px 19px 0px rgba(255, 255, 255, 0.75);
 }
 
-#eleginos {
-  background-color: #fff;
-  padding: 70px 0;
+#servicios h2 {
+  color: var(--BLANCO, #FFF);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
 }
-#eleginos h2,
-#eleginos p {
-  color: #000;
+#servicios .contServicios {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.3rem;
 }
-#eleginos h2 {
-  margin-bottom: 1.3rem;
-  color: #1b1b2f;
+#servicios .servicio {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
 }
-#eleginos span {
+#servicios .servicio span {
   display: block;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #e33e5a;
-  margin-top: 1.7rem;
 }
-#eleginos p {
-  margin-bottom: 0.5rem;
+#servicios .servicio .contImg {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 2.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#servicios .servicio .contImg img {
+  z-index: 3;
+  position: absolute;
+}
+#servicios .servicio .contImg::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 2.5px;
+  background: linear-gradient(60deg, #32669B 0%, #85FFBD 100%);
+}
+#servicios .servicio .contImg::before {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: var(--AZUL-FONDO);
+  z-index: 2;
+  border-radius: 2.5px;
+}
+#servicios .servicio p {
+  color: var(--BLANCO, #FFF);
+  font-size: 1rem;
+  font-weight: 500;
+}
+#servicios .servicio p span {
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
