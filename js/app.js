@@ -11,6 +11,9 @@ var prev_value_capa4 = parseFloat(window.getComputedStyle(capa4).left) || 0;
 const menuBtn = document.querySelector(".menu-btn");
 const menuLateral = document.querySelector(".menu-lateral");
 const menu = document.querySelector(".menu");
+const linksMenu = document.querySelectorAll(".menu-lateral ul li a");
+
+console.log(linksMenu);
 let menuOpen = false;
 
 
@@ -28,6 +31,17 @@ menuBtn.addEventListener('click', () => {
         menuOpen = false;
     }
 })
+
+linksMenu.forEach(link => {
+    link.addEventListener("click", () => {
+        // Remover la clase 'cerrado' para cerrar el menú lateral
+        menuLateral.classList.add('cerrado');
+        // Cambiar el estado de menuOpen
+        menuOpen = false;
+        menuBtn.classList.remove('open');
+        console.log("cierra");
+    });
+});
 
 window.addEventListener("scroll", () => {
     let value = window.scrollY;

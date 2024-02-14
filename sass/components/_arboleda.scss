@@ -51,4 +51,15 @@
     #capa1{
         object-position: 0 62%;
     }
+
+    @media (max-width: 992px){
+        #slogan {
+            font-size: 2.5rem;
+        }
+    }
+    @media (max-width: 577px){
+        #slogan {
+            font-size: 2.3rem;
+        }
+    }
 }
