@@ -100,4 +100,24 @@
             font-size: 2rem;
         }
     }
+
+
+    @media (max-width: 992px) {
+        .contCards {
+            grid-template-columns: repeat(2, 260px);
+        }
+    }
+    @media (max-width: 577px) {
+        .contCards {
+            grid-template-columns: repeat(1, 260px);
+        }
+
+        h2{
+            font-size: 2rem;
+        }
+
+        h3{
+            font-size: 1.3rem;
+        }
+    }
 }
